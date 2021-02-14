@@ -8,7 +8,7 @@ class Person {
 
     constructor()
 
-    fun getPersonInfo() = "$name e $cpf"
+    fun info() = "$name e $cpf"
 
 
 }

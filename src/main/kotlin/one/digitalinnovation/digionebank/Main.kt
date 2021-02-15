@@ -2,13 +2,8 @@ package one.digitalinnovation.digionebank
 
 import one.digitalinnovation.digionebank.enums.ClientType
 import one.digitalinnovation.digionebank.model.Bank
-import one.digitalinnovation.digionebank.model.Person
 
 fun main() {
-
-    // Criação de Pessoa
-    val jj = Person();
-    println(jj.info())
 
     // Criação de Banco
     val bank = Bank(number = 12, name = "DigiOne")

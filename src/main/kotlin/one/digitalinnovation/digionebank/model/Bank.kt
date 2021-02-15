@@ -2,5 +2,5 @@ package one.digitalinnovation.digionebank.model
 
 data class Bank(val number: Int, val name: String) {
 
-    fun info() = "$number - $name"
+    override fun toString(): String = "$number - $name"
 }

@@ -3,11 +3,13 @@ package one.digitalinnovation.digionebank
 import one.digitalinnovation.digionebank.enums.ClientType
 import one.digitalinnovation.digionebank.model.Analyst
 import one.digitalinnovation.digionebank.model.Bank
+import one.digitalinnovation.digionebank.model.Client
 import one.digitalinnovation.digionebank.model.Manager
 import one.digitalinnovation.digionebank.util.PrintUtil
 
 fun main() {
     specializationEmployees()
+    clients()
 }
 
 fun banks() {
@@ -38,6 +40,16 @@ fun specializationEmployees() {
     val joao = Analyst("João Pedro", "123.123.123-12", 2000.0)
     PrintUtil.printEmployee(joao)
 
-    val roberto = Manager("Roberto Dias", "321.321.321-32", 5000.0)
+    val roberto = Manager("Roberto Dias", "321.321.321-32", 5000.0, "1234")
     PrintUtil.printEmployee(roberto)
+}
+
+fun clients() {
+    PrintUtil.printSeparator("Clientes")
+
+    val jose = Client("José da Silva","132.132.132-13", ClientType.PF, "1234")
+    println(jose.toString())
+
+    val mariaDoces = Client("Maria Doces","22.472.506/0001-36", ClientType.PJ, "123")
+    println(mariaDoces.toString())
 }

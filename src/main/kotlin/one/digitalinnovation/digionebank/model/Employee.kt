@@ -10,6 +10,6 @@ abstract class Employee(
 
     abstract fun calculateAid(): Double
 
-    override fun toString(): String  = "Nome: $name, CPF: $cpf, Salario: $salary, Auxilio: ${calculateAid()}"
+    override fun toString(): String = "Nome: $name, CPF: $cpf, Salario: $salary, Auxilio: ${calculateAid()}"
 
 }
